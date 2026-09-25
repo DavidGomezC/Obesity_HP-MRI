@@ -1,0 +1,15 @@
+To backup an existing venv
+
+pip freeze > requirements.txt
+
+to use this project:
+virtualenv --no-site-packages .venv
+
+Next, populate the environment with requirements file from project:
+
+source .venv/bin/activate
+pip install -r requirements.txt
+
+Usage: 
+source 
+python code/Dicom_preprocessing.py dicom_folder nifti_folder
